@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1A1A1D;
+    overflow-x: hidden;
+    font-family: 'Cinzel', serif;
+    
+}
+
+/* Header */
+
+header{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    align-items: center;
+    text-align: center;
+}
+
+.vid1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1{
+    color: #F5F5F5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    font-size: 1000%;
+    text-shadow: 
+        0 0 20px rgba(255, 255, 255, 0.8),
+        0 0 30px rgba(255, 255, 255, 0.6),
+        0 0 40px rgba(255, 255, 255, 0.4);
+}
+
+h4{
+    color: #F5F5F5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 250%;
+    text-shadow: 
+        0 0 20px rgba(255, 255, 255, 0.8),
+        0 0 30px rgba(255, 255, 255, 0.6),
+        0 0 40px rgba(255, 255, 255, 0.4);
+}
+
+.CTA{
+    color: #F5F5F5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 300%);
+    font-size: 150%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 100px;
+    text-shadow: 
+        0 0 20px rgba(255, 255, 255, 0.8),
+        0 0 30px rgba(255, 255, 255, 0.6),
+        0 0 40px rgba(255, 255, 255, 0.4);
+}
+
+a{
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+a:hover{
+    color: #5c5959;
+}
+
+/* reciclado */
+
+p{
+    color: #F5F5F5;
+}
+
+.Txt1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;              
+    gap: 10px;                  
+    padding: 6%;
+    align-items: center;
+}
+
+.T1{
+    margin-top: 5%;
+    color: #F5F5F5;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 200%;
+    text-align: center;
+    text-shadow: 
+        0 0 20px rgba(255, 255, 255, 0.8),
+        0 0 30px rgba(255, 255, 255, 0.6),
+        0 0 40px rgba(255, 255, 255, 0.4);
+}
+
+
+.formula{
+    text-align: center;
+    font-size: 150%;
+}
+
+.U1{
+    color: #F5F5F5;
+    width: 50%;
+    position: relative;
+    left: 3%;
+    text-align: justify;
+    font-size: 120%;
+    font-family: 'Jockey One', sans-serif;
+}
+
+.Txt12{
+    text-align: center;
+}
+
+.img1{
+    width: 100%;
+}
+
+/* Texto contexto */
+
+.Txt2{             
+    display: grid;
+    grid-template-columns: 1fr 1fr;              
+    gap: 10px;                  
+    padding: 6%;
+    align-items: center;
+}
+
+.T2, .T3, .T5{
+    color: #F5F5F5;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 200%;
+    text-align: center;
+    text-shadow: 
+        0 0 20px rgba(255, 255, 255, 0.8),
+        0 0 30px rgba(255, 255, 255, 0.6),
+        0 0 40px rgba(255, 255, 255, 0.4);
+}
+
+.Concepto{
+    color: #F5F5F5;
+    position: relative;
+    text-align: justify;
+    font-size: 120%;
+    font-family: 'Jockey One', sans-serif;
+    width: 90%;
+}
+
+.Txt21{
+    text-align: center;
+}
+
+.img2{
+    width: 40%;
+}
+
+/* Texto de tipos de potencia */
+
+.Txt3{             
+    display: grid;
+    grid-template-columns: 1fr 1fr;              
+    gap: 10px;                  
+    padding: 6%;
+    align-items: center;
+}
+
+.S3{
+    color: #F5F5F5;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 150%;
+    text-align: center;
+    text-shadow: 
+        0 0 20px rgba(255, 255, 255, 0.8),
+        0 0 30px rgba(255, 255, 255, 0.6),
+        0 0 40px rgba(255, 255, 255, 0.4);
+    padding-bottom: 5px;
+}
+
+.P3, .P4{
+    color: #F5F5F5;
+    width: 90%;
+    position: relative;
+    text-align: justify;
+    font-size: 120%;
+    font-family: 'Jockey One', sans-serif;
+    padding-bottom: 15px;
+}
+
+.Txt32{
+    text-align: center;
+}
+
+.img3{
+    width: 100%;
+}
+
+/* Texto de aplicaciones de potencia */
+
+.Pr4{
+    background-color: #3c3c46;
+}
+
+.T4{
+    color: #F5F5F5;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 200%;
+    text-align: center;
+    text-shadow: 3px 3px 8px white;
+}
+
+.Txt4{             
+    display: grid;
+    grid-template-columns: 1fr 1fr;              
+    gap: 10px;                  
+    padding: 6%;
+    align-items: center;
+    text-align: center;
+}
+
+.S4{
+    color: #F5F5F5;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 150%;
+    text-align: center;
+    text-shadow: 3px 3px 8px white;
+    padding-bottom: 5px;
+}
+
+.U4{
+    color: #F5F5F5;
+    width: 90%;
+    position: relative;
+    text-align: justify;
+    font-size: 120%;
+    font-family: 'Jockey One', sans-serif;
+    padding-bottom: 15px;
+}
+
+.P41, .P51{
+    color: #F5F5F5;
+    width: 90%;
+    position: relative;
+    text-align: justify;
+    font-size: 120%;
+    font-family: 'Jockey One', sans-serif;
+    padding-left: 4%;
+    padding-bottom: 15px;
+}
+
+.U41, .U51{
+    color: #F5F5F5;
+    width: 90%;
+    position: relative;
+    text-align: justify;
+    font-size: 120%;
+    font-family: 'Jockey One', sans-serif;
+    padding-bottom: 15px;
+    padding-left: 10%;
+}
+
+.img4{
+    width: 53%;
+}
+
+/* a */
+
+.T51{
+    color: #F5F5F5;
+    width: 90%;
+    position: relative;
+    text-align: justify;
+    text-shadow: 
+        0 0 20px rgba(255, 255, 255, 0.8),
+        0 0 30px rgba(255, 255, 255, 0.6),
+        0 0 40px rgba(255, 255, 255, 0.4);
+    font-size: 150%;
+    font-family: 'Jockey One', sans-serif;
+    padding-left: 7%;
+    padding-bottom: 15px;
+}
+
+/* Estilo general para el footer */
+.footer {
+    background-color: #3c3c46;      /* Color de fondo oscuro */
+    color: #F5F5F5;                 /* Color de texto blanco */
+    padding: 40px 0;             /* Espaciado alrededor del footer */
+    text-align: center;          /* Centra el contenido */
+    font-family: 'Jockey One', sans-serif;
+    text-shadow: 3px 3px 8px white;
+}
+
+.footer-container {
+    display: grid;               /* Usamos grid para organizar el contenido */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    gap: 20px;                   /* Espaciado entre las columnas */
+    padding: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;             /* Tamaño de fuente del título de cada sección */
+    margin-bottom: 10px;         /* Espacio debajo del título */
+    text-shadow: 3px 3px 8px white;
+}
+
+.footer-section p {
+    font-size: 14px;             /* Tamaño de fuente de los párrafos */
+    line-height: 1.5;            /* Espaciado entre líneas */
+    text-shadow: none;
+}
+
+.footer-section ul {
+    list-style-type: none;       /* Elimina los puntos de la lista */
+    padding: 0;                  /* Elimina el padding */
+}
+
+.footer-section ul li {
+    margin: 5px 0;               /* Espaciado entre los elementos de la lista */
+}
+
+.footer-section ul li a {
+    color: #F5F5F5;              /* Color de los enlaces */
+    text-decoration: none;       /* Elimina el subrayado */
+    transition: color 0.3s ease; /* Transición suave para los enlaces */
+    text-shadow: none;
+}
+
+.footer-section ul li a:hover {
+    color: #F5F5F5;              /* Color al pasar el ratón por encima */
+}
+
+/* Estilo para el pie de página */
+.footer-bottom {
+    background-color: #292933;      /* Fondo ligeramente más oscuro */
+    padding: 20px;               /* Espaciado alrededor */
+    font-size: 14px;             /* Tamaño de fuente */
+}
+
+.footer-bottom p {
+    margin: 0;                   /* Elimina el margen */
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding: 1rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  
+    background-color: rgba(0,0,0,0.85);
+  
+  }
+  
+  .lightbox-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 90vw;
+    max-height: 80vh;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    object-fit: contain;
+  }
+  
+  .lightbox-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  
+  
+  /* Contenedor del lightbox ya usa flex para centrar la imagen */
+  .lightbox.active {
+    display: block;
+  }
+  
+  .lightbox-prev:hover,
+  .lightbox-next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .lightbox-prev {
+    left: 1rem;
+  }
+  
+  .lightbox-next {
+    right: 1rem;
+  }
+
+

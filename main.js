@@ -60,4 +60,21 @@ window.addEventListener("keydown", (e) => {
         closeLightbox();
       }
     }
-  });
+});
+
+document.getElementById('suggestion-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evitar que el formulario se envíe
+
+    // Obtener el texto de la sugerencia
+    const suggestionText = document.getElementById('suggestion').value;
+
+    if (suggestionText.trim() !== "") {
+        // Mostrar el mensaje de agradecimiento
+        document.getElementById('message').classList.remove('hidden');
+        
+        // Limpiar el campo de texto
+        document.getElementById('suggestion').value = "";
+    } else {
+        alert("Por favor, escribe una sugerencia.");
+    }
+});

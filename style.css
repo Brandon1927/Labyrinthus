@@ -26,6 +26,7 @@ header{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: -1;
 }
 
 h1{
@@ -93,7 +94,7 @@ a:hover{
 
 /* reciclado */
 
-p{
+p, ul, li{
     color: #F5F5F5;
 }
 
@@ -117,12 +118,6 @@ p{
         0 0 40px rgba(255, 255, 255, 0.4);
 }
 
-
-.formula{
-    text-align: center;
-    font-size: 150%;
-}
-
 .U1{
     color: #F5F5F5;
     width: 50%;
@@ -134,14 +129,30 @@ p{
 }
 
 .Txt12{
+    display: grid;
+    grid-template-columns: repeat(1, 5fr);
+    gap: 15px;
     text-align: center;
+    position: relative;
+    left: 20%;
 }
 
 .img1{
-    width: 100%;
+    width: 80%;
 }
 
+
 /* Texto contexto */
+
+.Txt21{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.img2{
+    width: 80%;
+}
 
 .Txt2{             
     display: grid;
@@ -151,7 +162,7 @@ p{
     align-items: center;
 }
 
-.T2, .T3, .T5{
+.T2, .T3{
     color: #F5F5F5;
     font-family: 'Jockey One', sans-serif;
     font-size: 200%;
@@ -162,57 +173,14 @@ p{
         0 0 40px rgba(255, 255, 255, 0.4);
 }
 
-.Concepto{
-    color: #F5F5F5;
-    position: relative;
-    text-align: justify;
-    font-size: 120%;
-    font-family: 'Jockey One', sans-serif;
-    width: 90%;
-}
-
-.Txt21{
-    text-align: center;
-}
-
-.img2{
-    width: 40%;
-}
-
 /* Texto de tipos de potencia */
 
 .Txt3{             
     display: grid;
-    grid-template-columns: 1fr 1fr;              
+    grid-template-columns: repeat(3, 1fr);              
     gap: 10px;                  
     padding: 6%;
     align-items: center;
-}
-
-.S3{
-    color: #F5F5F5;
-    font-family: 'Jockey One', sans-serif;
-    font-size: 150%;
-    text-align: center;
-    text-shadow: 
-        0 0 20px rgba(255, 255, 255, 0.8),
-        0 0 30px rgba(255, 255, 255, 0.6),
-        0 0 40px rgba(255, 255, 255, 0.4);
-    padding-bottom: 5px;
-}
-
-.P3, .P4{
-    color: #F5F5F5;
-    width: 90%;
-    position: relative;
-    text-align: justify;
-    font-size: 120%;
-    font-family: 'Jockey One', sans-serif;
-    padding-bottom: 15px;
-}
-
-.Txt32{
-    text-align: center;
 }
 
 .img3{
@@ -220,10 +188,6 @@ p{
 }
 
 /* Texto de aplicaciones de potencia */
-
-.Pr4{
-    background-color: #3c3c46;
-}
 
 .T4{
     color: #F5F5F5;
@@ -235,73 +199,62 @@ p{
 
 .Txt4{             
     display: grid;
-    grid-template-columns: 1fr 1fr;              
+    grid-template-columns: repeat(2, 1fr);              
     gap: 10px;                  
-    padding: 6%;
+    padding-left: 10%;
+    padding-bottom: 5%;
     align-items: center;
     text-align: center;
-}
-
-.S4{
-    color: #F5F5F5;
-    font-family: 'Jockey One', sans-serif;
-    font-size: 150%;
-    text-align: center;
-    text-shadow: 3px 3px 8px white;
-    padding-bottom: 5px;
-}
-
-.U4{
-    color: #F5F5F5;
-    width: 90%;
-    position: relative;
-    text-align: justify;
-    font-size: 120%;
-    font-family: 'Jockey One', sans-serif;
-    padding-bottom: 15px;
-}
-
-.P41, .P51{
-    color: #F5F5F5;
-    width: 90%;
-    position: relative;
-    text-align: justify;
-    font-size: 120%;
-    font-family: 'Jockey One', sans-serif;
-    padding-left: 4%;
-    padding-bottom: 15px;
-}
-
-.U41, .U51{
-    color: #F5F5F5;
-    width: 90%;
-    position: relative;
-    text-align: justify;
-    font-size: 120%;
-    font-family: 'Jockey One', sans-serif;
-    padding-bottom: 15px;
-    padding-left: 10%;
 }
 
 .img4{
     width: 53%;
 }
 
-/* a */
-
-.T51{
-    color: #F5F5F5;
-    width: 90%;
+button{
     position: relative;
-    text-align: justify;
+    left: 42.5%;
+    padding: 1%;
+    font-family: 'Cinzel', serif;
+    font-size: 120%;
     text-shadow: 
         0 0 20px rgba(255, 255, 255, 0.8),
         0 0 30px rgba(255, 255, 255, 0.6),
         0 0 40px rgba(255, 255, 255, 0.4);
-    font-size: 150%;
+    border: 2px rgba(170, 132, 8, 0.4);
+    border-radius: 20px 10px;
+    color: black;
+    background-color: rgb(236, 183, 8);
+    box-shadow: 
+        0 0 20px rgba(170, 132, 8, 0.8),
+        0 0 30px rgba(170, 132, 8, 0.6),
+        0 0 40px rgba(170, 132, 8, 0.4);
+}
+
+/* a */
+
+.T5{
+    color: #F5F5F5;
     font-family: 'Jockey One', sans-serif;
-    padding-left: 7%;
-    padding-bottom: 15px;
+    font-size: 200%;
+    text-align: center;
+    text-shadow: 
+        0 0 20px rgba(255, 255, 255, 0.8),
+        0 0 30px rgba(255, 255, 255, 0.6),
+        0 0 40px rgba(255, 255, 255, 0.4);
+    padding-bottom: 4%;
+}
+
+.T6{
+    color: #F5F5F5;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 200%;
+    text-align: center;
+    text-shadow: 
+        0 0 20px rgba(255, 255, 255, 0.8),
+        0 0 30px rgba(255, 255, 255, 0.6),
+        0 0 40px rgba(255, 255, 255, 0.4);
+    padding: 6%;
 }
 
 /* Estilo general para el footer */
